@@ -1,0 +1,163 @@
+.hero-section{
+    background-image: url("/img/hero/mob-min.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+}
+.hero-title{
+    color: #cf0e48;
+    font-family: "DM Serif Display", sans-serif;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 1.5;
+        margin-top: 80px;
+text-align: center;
+text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+.hero-span{
+    color: #0ff;
+}
+.hero-text{
+    margin-top: 40px;
+    text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black;
+}
+.hero-baner{
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+    border-radius: 20px;
+    background: rgba(12, 11, 11, 0.3);
+    backdrop-filter: blur(8px);
+    padding: 30px;    
+}
+.baner-text{
+color: #cf0e48;
+font-weight: 600;
+font-size: 24px;
+
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.hero-img-button.pulse {
+    animation: pulse-animation 2s infinite;
+    transition: transform 0.3s ease;
+    display: block;
+    width: 200px;
+    height: 60px;
+    background-color: #0ff;
+    color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    border-radius: 20px;
+    margin-top: 30px;
+    
+}
+.game-swiper-two{
+    margin-top: 20px;
+}
+@media only screen and (min-width: 768px) {
+.hero-section{
+    background-image: url("/img/hero/hero-min.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+}
+.hero-title {
+        font-size: 70px;
+    }
+}
+/* Accordion */
+.faq-acc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 40px auto 0;
+    padding: 0 24px;
+}
+
+.faq-acc-el {
+    position: relative;
+    transition: margin-bottom 0.3s ease;
+
+}
+
+.faq-acc-el-trigger {
+    padding: 8px 0px;
+    width: 100%;
+    height: auto;
+    background: inherit;
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-size: 32px;
+    color: #cf0e48;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-acc-arr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: inherit;
+    min-width: 48px;
+    transition: transform 0.3s ease;
+}
+
+.faq-acc-arr.is-hidden {
+    display: none;
+}
+
+.faq-acc-el-descr-frame {
+    padding: 8px 0 0;
+    width: 100%;
+    color: #0ff;
+    text-align: left;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 1s ease, opacity 0.5s ease, padding 0.5s ease;
+}
+
+.faq-acc-el.js-enabled .faq-acc-el-descr-frame {
+    visibility: hidden;
+}
+
+.faq-acc-el.open .faq-acc-el-descr-frame {
+    visibility: visible;
+    opacity: 1;
+    background: inherit;
+    width:100%;
+}
+
